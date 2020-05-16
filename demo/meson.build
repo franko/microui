@@ -13,6 +13,7 @@ if libsdl2.found() and opengl.found()
         include_directories: microui_include,
         link_with: libmicroui,
         dependencies: [libsdl2, opengl],
+        install: true,
         gui_app: true,
     )
 endif
